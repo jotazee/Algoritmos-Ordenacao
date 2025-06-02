@@ -1,11 +1,14 @@
 import random
+import time
+
 from Selection_Sort import selection_sort
 from Bubble_Sort import bubble_sort
 from Insertion_Sort import insertion_sort
 from Merge_Sort import mergesort
 from Quick_Sort import quicksort
 from heap_sort import heap_sort
-
+from Counting_Sort import counting_sort
+from Bucked_Sort import bucket_sort
 
 
 any_numbers = random.sample(range(1, 1000), 42)
@@ -20,5 +23,7 @@ repeated = [7, 7, 7, 7, 7, 1, 1, 9, 9, 0, 4, 4, 4, 5, 4, 5, 7, 1,]
 if __name__ == '__main__':
    lista = any_numbers
    print(lista)
-   heap_sort(lista)
+   bucket_sort(lista)
    print(f"\n Ordenado: {lista}")
+
+
